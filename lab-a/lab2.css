@@ -9,15 +9,15 @@ body {
     color: white;
 }
 
-/* Menu Styling */
+
 .menu {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Increased gap for better spacing */
+    gap: 30px;
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 0;
-    border-radius: 50px; /* Rounded edges for a sleek look */
+    border-radius: 50px;
 }
 
 .menu a {
@@ -35,7 +35,7 @@ body {
     background-color: #ffcc00;
 }
 
-/* Header Styling */
+
 .header {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -58,7 +58,7 @@ body {
     margin-top: 10px;
 }
 
-/* Button Styling */
+
 .button a {
     text-decoration: none;
 }
@@ -77,33 +77,32 @@ body {
     background-color: #e6b800;
 }
 
-/* Text Container */
+
 .text {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px; /* Increased padding for more spacing */
+    padding: 40px;
     margin: 30px;
-    border-radius: 15px; /* Softer rounded edges */
+    border-radius: 15px;
 }
 
-/* Onlytext Layout */
+
 .onlytext {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Allows it to stack on smaller screens */
+    flex-wrap: wrap;
     padding: 20px;
 }
 
-/* Individual Sections */
 .about, .themes, .parts {
     flex: 1;
     margin: 10px;
-    padding: 20px; /* Added padding for more space inside */
-    min-width: 280px; /* Ensures proper spacing on small screens */
-    max-width: 30%; /* Constrains width on larger screens */
-    background-color: rgba(255, 255, 255, 0.1); /* Light background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    padding: 20px;
+    min-width: 280px;
+    max-width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .text h3 {
@@ -118,7 +117,7 @@ body {
     line-height: 1.6;
 }
 
-/* Gallery Section */
+
 .gallery {
     display: flex;
     flex-direction: column;
@@ -173,7 +172,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Footer Styling */
 footer {
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -195,13 +193,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 1024px) {
     .about, .themes, .parts {
-        max-width: 100%; /* Full width on small screens */
+        max-width: 100%;
     }
 
     .menu {
-        gap: 10px; /* Adjust spacing for stacked items */
+        gap: 10px;
     }
 }
