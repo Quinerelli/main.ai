@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Układanka Mapowa</title>
+    <link rel="stylesheet" href="lab3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://rawgit.com/mapbox/leaflet-image/gh-pages/leaflet-image.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="mapView" class="box">
+        <div id="map"></div>
+    </div>
+    <div id="snapshotView" class="box">
+        <canvas id="snapshotCanvas"></canvas>
+    </div>
+    <div id="puzzleView" class="box">
+        <div id="puzzleBoard"></div>
+    </div>
+    <div id="solutionView" class="box">
+        <div id="solutionBoard"></div>
+    </div>
+</div>
+<div class="buttons">
+    <button id="locateBtn">Moja lokalizacja</button>
+    <button id="downloadMapBtn">Pobierz mapę</button>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="lab3.js"></script>
+</body>
+</html>
