@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Apple Chancery, cursive;
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    border-radius: 50px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #333;
+    background-color: #ffcc00;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1, .header h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #e6b800;
+}
+
+/* Zmiana dla przycisków, aby były lekko oddzielone */
+#style-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Dodanie przerwy między przyciskami */
+    flex-wrap: wrap; /* Przyciski będą zawijać się na mniejsze ekrany */
+    margin-top: 20px;
+}
+
+/* Stylowanie przycisków */
+#style-links button {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px; /* Dodatkowy margines między przyciskami */
+}
+
+#style-links button:hover {
+    background-color: #e6b800;
+    transform: scale(1.1); /* Powiększenie przycisku przy najechaniu */
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.onlytext {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.about, .themes, .parts {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text h3 {
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    color: #ffcc00;
+}
+
+.text p, .text ol, .text li {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.gallery div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.gallery .postac {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.gallery img {
+    flex-shrink: 0;
+    border-radius: 10px;
+    width: 240px;
+    height: auto;
+}
+
+.gallery p {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.gallery div p:first-of-type {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.gallery div p:last-of-type {
+    font-family: Apple Chancery, cursive;
+    font-size: 1.1em;
+    line-height: 1.8;
+    background-color: rgba(245, 241, 229, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    color: #333;
+    text-align: justify;
+    border: 1px solid #ffcc00;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ffcc00;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .about, .themes, .parts {
+        max-width: 100%;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    #style-links {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 5em;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .about, .themes, .parts {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+body, p:not(.comments p), div {
+    text-align: justify;
+}

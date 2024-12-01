@@ -1,0 +1,200 @@
+* {
+    margin: 5px;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    margin: 5px;
+    flex-shrink: 1;
+    min-width: 80px;
+}
+
+.menu a:hover {
+    background-color: sandybrown;
+    color: #fff;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: -10px;
+}
+
+button {
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+}
+
+button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: white;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+
+button:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.header {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-image: url("mapa.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 240px;
+}
+
+h1, h2, h3 {
+    font-family: Algerian;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 1%;
+}
+
+p {
+    text-align: center;
+}
+
+.text {
+    padding: 2%;
+    background-image: url('zwoj2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Snell Roundhand, cursive;
+    text-shadow: 2px 2px 4px #ffffff;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about, .themes, .parts {
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (min-width: 1000px) {
+    .nisko, .pot, .lucz, .woj, .czar, .krasnal, .smok {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 5em;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .about, .themes, .parts {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+body, p:not(.comments p), div {
+    text-align: justify;
+}

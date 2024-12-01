@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-image: url('background2.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: lightgray;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    color: black;
+    background-color: #ff9900;
+}
+
+.header {
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 15px;
+    text-align: center;
+}
+
+.header h1, .header h2 {
+    margin: 0;
+    color: #ff9900;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.text h3 {
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+    color: #ff9900;
+}
+
+.text p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Nowe style dla przycisków w Stylu 3 */
+#style-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Przyciski będą się zawijać na mniejszych ekranach */
+    margin-top: 20px;
+}
+
+/* Przyciski Stylu 3 */
+#style-links button {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    background-color: #e6b800;
+    border-radius: 50px;
+    border: 3px solid #ffcc00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#style-links button:hover {
+    background-color: #ffcc00; /* Zmiana koloru tła przy najechaniu */
+    transform: scale(1.1); /* Powiększenie przycisku przy najechaniu */
+}
+
+/* Dodatkowe style przycisków */
+#style-links button:active {
+    background-color: #ff9900; /* Zmiana koloru po kliknięciu */
+    transform: scale(1); /* Przywrócenie normalnej wielkości po kliknięciu */
+}
+
+footer {
+    background-color: rgba(50, 50, 50, 0.8);
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ff9900;
+}
+
+footer p {
+    margin: 4px;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .about, .themes, .parts {
+        max-width: 100%;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    #style-links {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 5em;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .about, .themes, .parts {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+body, p:not(.comments p), div {
+    text-align: justify;
+}
