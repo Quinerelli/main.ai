@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("tloreal.webp") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.weather-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-height: 90vh;
+    overflow-y: auto; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherResult, #forecastResult {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#forecastResult h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+/* Wygląd prognoz */
+.weather-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    position: relative; 
+}
+
+
+.weather-info img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 50%; 
+    padding: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+
+.weather-info:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 200, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Dodanie subtelnych linii między danymi w prognozie */
+.weather-info div p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+.weather-info div p:last-child {
+    border-bottom: none; /* Usunięcie linii pod ostatnim elementem */
+}
