@@ -1,0 +1,56 @@
+.schedule td.time,
+.schedule th:first-child,
+.schedule td:first-child {
+    display: none;
+}
+
+.schedule td {
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.schedule th,
+.schedule td {
+    width: 13.71%;
+}
+
+.schedule tr:nth-child(n+6) {
+    display: none;
+}
+
+.date-top-right {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #007bff;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.schedule td {
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.schedule td {
+    font-size: 0;
+}
+
+.schedule td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
